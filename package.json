@@ -1,0 +1,29 @@
+{
+  "name": "oobe-capital-agent",
+  "version": "1.0.0",
+  "description": "Risk-first autonomous SOL/USDC capital agent for Steve Capital (OOBE Protocol) using SAP MCP, Jupiter, Pyth, MultiHopper and Ace Data Cloud",
+  "scripts": {
+    "cli": "tsx src/cli.ts",
+    "keygen": "tsx src/cli.ts keygen",
+    "doctor": "tsx src/cli.ts doctor",
+    "tick": "tsx src/cli.ts tick",
+    "loop": "tsx src/cli.ts loop",
+    "report": "tsx src/cli.ts report",
+    "build": "tsc",
+    "test": "tsx --test test/*.test.ts"
+  },
+  "author": "666Crypro",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "@solana/web3.js": "^1.99.0",
+    "bs58": "^6.0.0",
+    "dotenv": "^18.0.10"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.10",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$comment": "Mandate + risk limits. Mirror these in Steve Capital (see docs/steve-mandate.md).",
+  "assets": { "base": "SOL", "quote": "USDC" },
+  "allocation": {
+    "neutralSolWeight": 0.5,
+    "minSolWeight": 0.25,
+    "maxSolWeight": 0.75,
+    "trendTiltPer10Pct": 0.1,
+    "rebalanceBand": 0.07
+  },
+  "risk": {
+    "maxTradeUsd": 10,
+    "maxDailyNotionalUsd": 40,
+    "maxTradesPerDay": 4,
+    "minMinutesBetweenTrades": 120,
+    "maxSlippageBps": 50,
+    "maxPriceImpactPct": 0.3,
+    "maxOracleDivergencePct": 1.0,
+    "minSolReserve": 0.03,
+    "minTradeUsd": 2,
+    "drawdownHaltPct": 20,
+    "killSwitchFile": "state/KILL"
+  },
+  "profitSweep": {
+    "enabled": false,
+    "highWaterMarkStepUsd": 5,
+    "sweepFractionOfGain": 0.5,
+    "token": "USDC",
+    "hops": 3
+  }
+}
